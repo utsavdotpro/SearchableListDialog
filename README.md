@@ -2,6 +2,9 @@
 # SearchableListDialog
 Bottom Dialog Searchable List built with Material.io
 
+## Sample
+<img  src="./samples/preview1.jpg" height="350">
+
 ## Implementation
 **Step 1:** Add to project level build.gradle
 
@@ -134,6 +137,7 @@ Since SLD doesn't work with any specific object type, you have to define your ow
 
  - Works with literally any type of data
  - One-on-one comparison
+ - Auto empty view
  - Portable
  - Clean UI
  - Pre-optimized
