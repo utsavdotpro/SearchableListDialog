@@ -1,2 +1,3 @@
+include ':SearchableListDialog'
 include ':app'
 rootProject.name = "SearchableListDialogLibrary"
