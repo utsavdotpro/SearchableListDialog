@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <RelativeLayout
+    android:id="@+id/layoutSearch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#efefef"
+    android:padding="@dimen/s_small">
+
+    <com.isolpro.library.materialedittext.MaterialEditText
+      android:id="@+id/metSearch"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:met_boxBackgroundColor="#efefef"
+      app:met_hint="Search..." />
+
+  </RelativeLayout>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/layoutSearch">
+
+    <ListView
+      android:id="@+id/lvItems"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+    <com.isolpro.library.materialerrorview.MaterialErrorView
+      android:id="@+id/mevItems"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      app:eb_icon="@drawable/img_empty"
+      app:eb_message="No items in the list!" />
+
+  </RelativeLayout>
+
+</RelativeLayout>

@@ -38,6 +38,10 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -45,6 +49,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.3.0'
 
     api 'com.google.android.material:material:1.4.0-alpha01' // Material.io
+    implementation 'com.github.u-barnwal:MaterialErrorView:1.0.0' // MaterialErrorView
+    implementation 'com.github.u-barnwal:MaterialEditTextLibrary:1.0.4' // MaterialEditText
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
