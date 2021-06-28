@@ -35,6 +35,12 @@ public class SearchableListDialog<T> extends BottomSheetDialog {
     listen();
   }
 
+  @Override
+  public void show() {
+    super.show();
+    populateList();
+  }
+
   public void dismiss() {
     binding.metSearch.setText("");
     dismiss(false);
