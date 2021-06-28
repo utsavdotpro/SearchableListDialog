@@ -92,6 +92,7 @@ public class SearchableListDialog<T> extends BottomSheetDialog {
   private void populateList() {
     if (searchKeyword.isEmpty() || searchMatcher == null) {
       adapter.setItems(items);
+      adapter.notifyDataSetChanged();
       return;
     }
 
