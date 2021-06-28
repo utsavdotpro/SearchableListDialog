@@ -21,6 +21,7 @@ public class SearchableListDialog<T> extends BottomSheetDialog {
   private List<T> items;
   private DialogSearchableListBinding binding;
   private OnItemSelectedListener<T> onItemSelectedListener;
+  private OnNothingSelectedListener onNothingSelectedListener;
   private SearchMatcher<T> searchMatcher;
 
   public SearchableListDialog(@NonNull Context context, @NonNull SearchableListAdapter<T> adapter) {
@@ -34,9 +35,15 @@ public class SearchableListDialog<T> extends BottomSheetDialog {
     listen();
   }
 
-  @Override
   public void dismiss() {
     binding.metSearch.setText("");
+    dismiss(false);
+  }
+
+  private void dismiss(boolean wasItemSelected) {
+    if (!wasItemSelected && onNothingSelectedListener != null)
+      onNothingSelectedListener.exec();
+
     super.dismiss();
   }
 
@@ -73,7 +80,7 @@ public class SearchableListDialog<T> extends BottomSheetDialog {
       if (onItemSelectedListener != null)
         onItemSelectedListener.exec((T) binding.lvItems.getAdapter().getItem(position));
 
-      dismiss();
+      dismiss(true);
     });
   }
 
@@ -100,6 +107,10 @@ public class SearchableListDialog<T> extends BottomSheetDialog {
 
   public void setOnItemSelectedListener(OnItemSelectedListener<T> onItemSelectedListener) {
     this.onItemSelectedListener = onItemSelectedListener;
+  }
+
+  public void setOnNothingSelectedListener(OnNothingSelectedListener onNothingSelectedListener) {
+    this.onNothingSelectedListener = onNothingSelectedListener;
   }
 
   public void setSearchMatcher(SearchMatcher<T> searchMatcher) {
