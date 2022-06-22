@@ -49,7 +49,11 @@ In this example, I am creating a <i>dialog search list for a list of customers w
 - You can use any kind of object to populate and search for in the list
 - Here, I have created a simple object `Customer` with basic setters and getters
 
+<<<<<<< HEAD
 > You can also check out the [example app](https://github.com/utsavdotpro/SearchableListDialog/tree/main/app/src/main/java/com/isolpro/searchablelistdialoglibrary)
+=======
+> You can also check out the [example app](/app/src/main/java/com/utsavdotpro/searchabledialog/MainActivity.java)
+>>>>>>> 9fcc8e748799afab1e46c84df6580bb6acd0cdc0
 
 
 ### Creating List Adapter
