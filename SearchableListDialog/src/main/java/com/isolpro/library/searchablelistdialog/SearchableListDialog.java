@@ -6,6 +6,7 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 
 import androidx.annotation.NonNull;
+import androidx.core.view.ViewCompat;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.isolpro.library.searchablelistdialog.databinding.DialogSearchableListBinding;
@@ -57,6 +58,8 @@ public class SearchableListDialog<T> extends BottomSheetDialog {
 
     binding.lvItems.setAdapter(adapter);
     binding.lvItems.setEmptyView(binding.mevItems);
+
+    ViewCompat.setNestedScrollingEnabled(binding.lvItems, true);
   }
 
   private void listen() {

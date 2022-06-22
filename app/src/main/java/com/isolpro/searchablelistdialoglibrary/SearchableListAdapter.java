@@ -68,7 +68,6 @@ public class SearchableListAdapter extends com.isolpro.library.searchablelistdia
   }
 
   public class ViewHolder {
-
     private final RvListItemBinding binding;
 
     public ViewHolder(RvListItemBinding binding) {
