@@ -3,7 +3,10 @@
 Bottom Dialog Searchable List built with Material.io with custom search bar and custom list item view.
 
 ## Sample
-<img  src="./samples/preview1.jpg" height="350">
+<img src="./samples/demo.gif" height="350">
+<img src="./samples/preview1.png" height="350">
+<img src="./samples/preview2.png" height="350">
+<img src="./samples/preview3.png" height="350">
 
 ## Features
 
