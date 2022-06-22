@@ -3,10 +3,10 @@
 Bottom Dialog Searchable List built with Material.io with custom search bar and custom list item view.
 
 ## Sample
-<img src="./samples/demo.gif" height="350">
-<img src="./samples/preview1.png" height="350">
-<img src="./samples/preview2.png" height="350">
-<img src="./samples/preview3.png" height="350">
+| | |
+| - | - |
+| <img src="./samples/demo.gif" height="350"> | <img src="./samples/preview1.png" height="350"> |
+| <img src="./samples/preview2.png" height="350"> | <img src="./samples/preview3.png" height="350"> |
 
 ## Features
 
@@ -49,7 +49,7 @@ In this example, I am creating a <i>dialog search list for a list of customers w
 - You can use any kind of object to populate and search for in the list
 - Here, I have created a simple object `Customer` with basic setters and getters
 
-> You can also check out the [example app](/app/src/main/java/com/utsavdotpro/searchabledialog/MainActivity.java)
+> You can also check out the [example app](https://github.com/utsavdotpro/SearchableListDialog/tree/main/app/src/main/java/com/isolpro/searchablelistdialoglibrary)
 
 
 ### Creating List Adapter
